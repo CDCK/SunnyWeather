@@ -2,7 +2,6 @@ package com.example.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.android.util.showToast
 
 class MainActivity : AppCompatActivity() {
 

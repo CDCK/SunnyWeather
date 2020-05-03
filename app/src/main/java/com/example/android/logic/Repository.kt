@@ -6,6 +6,8 @@ import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 import java.lang.RuntimeException
 import com.example.android.logic.model.Place
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
 
 object Repository {
     fun searchPlaces(query: String) = liveData(Dispatchers.IO) {
@@ -22,4 +24,5 @@ object Repository {
         }
         emit(result as Result<List<Place>>)
     }
+
 }
