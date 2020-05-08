@@ -15,6 +15,9 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_place.*
 
+/**
+ * 测试修改
+ */
 class PlaceFragment : Fragment() {
     val viewModel by lazy { ViewModelProviders.of(this).get(PlaceViewModel::class.java) }
     private lateinit var adapter: PlaceAdapter
